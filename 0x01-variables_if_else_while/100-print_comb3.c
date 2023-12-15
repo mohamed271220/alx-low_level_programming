@@ -2,20 +2,25 @@
 /**
  * main - Entry point
  *
- * Description: Print all possible combinations of single-digit numbers
+ * Description: Print all possible combinations of two digits
  *
  * Return: Always 0 (Success)
- */
+*/
+
 int main(void)
 {
-int i;
+int i, j;
 for (i = 0; i < 10; i++)
 {
+for (j = i + 1; j < 10; j++)
+{
 putchar(i + '0');
-if (i < 9)
+putchar(j + '0');
+if (i < 8)
 {
 putchar(',');
 putchar(' ');
+}
 }
 }
 putchar('\n');
