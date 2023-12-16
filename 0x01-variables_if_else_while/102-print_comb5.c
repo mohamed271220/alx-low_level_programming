@@ -2,10 +2,11 @@
 /**
  * main - Entry point
  *
- * Description: Print all possible combinations of two two-digit numbers
+ * Description: Print all possible combinations of two digits
  *
  * Return: Always 0 (Success)
- */
+*/
+
 int main(void)
 {
 int i, j, k, l;
@@ -15,8 +16,9 @@ for (j = 0; j < 10; j++)
 {
 for (k = i; k < 10; k++)
 {
-for (l = j + 1; l < 10; l++)
+for (l = 0; l < 10; l++)
 {
+if (i == k && j >= l) continue;
 putchar(i + '0');
 putchar(j + '0');
 putchar(' ');
@@ -32,5 +34,5 @@ putchar(' ');
 }
 }
 putchar('\n');
-return (0);
+return 0;
 }
