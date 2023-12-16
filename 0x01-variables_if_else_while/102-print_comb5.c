@@ -18,7 +18,8 @@ for (k = i; k < 10; k++)
 {
 for (l = 0; l < 10; l++)
 {
-if (i == k && j >= l) continue;
+if (i == k && j >= l)
+continue;
 putchar(i + '0');
 putchar(j + '0');
 putchar(' ');
@@ -34,5 +35,5 @@ putchar(' ');
 }
 }
 putchar('\n');
-return 0;
+return (0);
 }
