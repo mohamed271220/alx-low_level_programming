@@ -17,8 +17,9 @@ for (j = 0; j < 10; j++)
 {
 for (k = i; k < 10; k++)
 {
-for (l = (i == k ? j + 1 : 0); l < 10; l++)
+for (l = 0; l < 10; l++)
 {
+if (i == k && j >= l) continue;
 putchar(i + '0');
 putchar(j + '0');
 putchar(' ');
