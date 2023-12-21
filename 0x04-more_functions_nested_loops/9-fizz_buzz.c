@@ -9,7 +9,7 @@
  * Return: void
  */
 
-void fizz_buzz(void)
+int main(void)
 {
 int num;
 for (num = 1; num <= 100; num++)
