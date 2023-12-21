@@ -7,7 +7,7 @@
  * Return: square root of x
  */
 
-double _sqrt(int x)
+double _sqrt(double x)
 {
 float sqrt, t;
 sqrt = x / 2;
