@@ -13,7 +13,7 @@ void puts2(char *str)
 int len = 0;
 while (*str != '\0')
 {
-len++;
+++len;
 str++;
 if (len % 2 == 0)
 {
