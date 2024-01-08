@@ -25,9 +25,9 @@ p1++;
 p2++;
 }
 if (!*p2)
-return p1Begin;
+return (p1Begin);
 p1 = p1Begin + 1;
 p1Adv++;
 }
-return NULL;
+return (NULL);
 }
