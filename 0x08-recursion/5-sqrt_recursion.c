@@ -7,6 +7,7 @@
  * Return: natural square root of n
  */
 
+int sqrt_check(int n, int i);
 int _sqrt_recursion(int n)
 {
 return (sqrt_check(n, 1));
