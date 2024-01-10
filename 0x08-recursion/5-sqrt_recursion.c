@@ -3,8 +3,8 @@
 /**
  * _sqrt_recursion - returns the natural square root of a number
  * @n: number to be evaluated
- *
- * Return: natural square root of n
+ * @i: iterator
+ * Return: square root of n
  */
 
 int sqrt_check(int n, int i);
