@@ -7,9 +7,13 @@
  * Return: natural square root of n
  */
 
-int sqrt_check(int n, int i);
 int _sqrt_recursion(int n)
 {
+if (n < 0)
+return (-1);
+else if (n == 0)
+return (0);
+else
 return (sqrt_check(n, 1));
 }
 
@@ -23,16 +27,10 @@ return (sqrt_check(n, 1));
 
 int sqrt_check(int n, int i)
 {
-if (n < 0)
-return (-1);
-else if (n == 0)
-return (0);
-else if (n == 1)
-return (1);
-else if (i * i == n)
+if (n == i * i)
 return (i);
-else if (i * i > n)
-return (-1);
-else
+else if (n > i * i)
 return (sqrt_check(n, i + 1));
+else
+return (-1);
 }
