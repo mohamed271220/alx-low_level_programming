@@ -27,6 +27,7 @@ break;
 }
 }
 }
+printf("%d\n", leastcents);
 }
 else
 {
