@@ -11,7 +11,7 @@
 int _strlen(char *s)
 {
 int i = 0;
-for(; *s != '\0'; s++)
+for (; *s != '\0'; s++)
 ;
 return (i);
 }
@@ -35,7 +35,7 @@ if (s2 == NULL)
 s2 = "\0";
 size1 = _strlen(s1);
 size2 = _strlen(s2);
-n = malloc(sizeof(char) * (size1 + size2) + 1);
+n = malloc(sizeof(char) * (size1 + size2) +1);
 if (n == 0)
 return (0);
 
