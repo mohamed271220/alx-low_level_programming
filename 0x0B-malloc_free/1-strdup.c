@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * _strdup - returns a pointer to a newly allocated 
+ * _strdup - returns a pointer to a newly allocated
  * @str: string to copy
  *
  * Return: pointer to new string, or NULL if it fails
