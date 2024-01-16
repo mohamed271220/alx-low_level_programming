@@ -13,7 +13,6 @@ int i = 0, j = 0;
 char *n;
 if (str == NULL)
 return (NULL);
-
 for (; str[i] != '\0'; i++)
 ;
 n = malloc(sizeof(*str) * i + 1);
