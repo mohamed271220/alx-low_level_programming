@@ -21,8 +21,6 @@ op_func = get_op_func(argv[2]);
 if (!op_func)
 printf("Error\n"), exit(99);
 
-printf("%d\n", op_func(a, b));
-
 if (!b && (argv[2][0] == '/' || argv[2][0] == '%'))
 printf("Error\n"), exit(100);
 
