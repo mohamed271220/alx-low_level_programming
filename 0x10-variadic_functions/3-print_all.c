@@ -44,9 +44,8 @@ void print_string(va_list ap)
 {
 	char *str = va_arg(ap, char *);
 
-	switch ((int)(str == NULL))
-		case 1:
-			printf("(nil)");
+	if (str == NULL)
+		str = "(nil)";
 	printf("%s", str);
 }
 
