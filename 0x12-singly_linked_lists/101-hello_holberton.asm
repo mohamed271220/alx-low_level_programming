@@ -9,7 +9,7 @@ main:
     ; Prepare arguments for printf
     mov rdi, hello ; Move the address of the string to rdi
     xor rax, rax ; Zero out rax (printf is a variadic function, and rax should hold the number of vector registers used)
-    call printf ; Call printf function
+    call printf ; Call printf function 
 
     ; Exit
     mov eax, 60 ; System call number (sys_exit)
