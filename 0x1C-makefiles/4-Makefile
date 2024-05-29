@@ -8,16 +8,16 @@ RM = rm -f
 all: $(NAME)
 
 $(NAME): $(OBJ)
-    $(CC) $(CFLAGS) -o $@ $^
+	$(CC) $(CFLAGS) -o $@ $^
 
 %.o: %.c
-    $(CC) $(CFLAGS) -c $< -o $@
+	$(CC) $(CFLAGS) -c $< -o $@
 
 clean:
-    -$(RM) *~ \#*\# $(NAME)
+	-$(RM) *~ \#*\# $(NAME)
 
 oclean:
-    -$(RM) $(OBJ)
+	-$(RM) $(OBJ)
 
 fclean: clean oclean
 
